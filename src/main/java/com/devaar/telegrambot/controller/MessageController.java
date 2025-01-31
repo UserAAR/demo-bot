@@ -18,7 +18,6 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class MessageController {
     private final TelegramBotService botService;
 
-    // 📌 1. Kullanıcıya metin mesajı gönderme
     @PostMapping("/send")
     public String sendMessage(@RequestParam String chatId, @RequestParam String text) {
         SendMessage message = new SendMessage();
@@ -33,13 +32,11 @@ public class MessageController {
         }
     }
 
-    // 📌 2. Bir Telegram grubuna mesaj gönderme
     @PostMapping("/sendToGroup")
     public String sendToGroup(@RequestParam String groupId, @RequestParam String text) {
         return sendMessage(groupId, text);
     }
 
-    // 📌 3. Fotoğraf gönderme
     @PostMapping("/sendPhoto")
     public String sendPhoto(@RequestParam String chatId, @RequestParam String photoUrl, @RequestParam String caption) {
         SendPhoto photo = new SendPhoto();
@@ -55,7 +52,6 @@ public class MessageController {
         }
     }
 
-    // 📌 4. Belge (PDF, TXT vb.) gönderme
     @PostMapping("/sendDocument")
     public String sendDocument(@RequestParam String chatId, @RequestParam String documentUrl) {
         SendDocument document = new SendDocument();
@@ -70,7 +66,7 @@ public class MessageController {
         }
     }
 
-    // 📌 5. Konum gönderme
+
     @PostMapping("/sendLocation")
     public String sendLocation(@RequestParam String chatId, @RequestParam double latitude, @RequestParam double longitude) {
         SendLocation location = new SendLocation();
