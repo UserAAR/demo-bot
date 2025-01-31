@@ -1,0 +1,10 @@
+spring:
+    application:
+      name: telegram-bot
+
+telegram:
+  bot:
+    username: "LMSdemobot"
+    token: "7742609394:AAHYhwMbwgpfWqHRj-t719AjR9S_1DjmDek"
+#  webhook:
+#    url: "https://myserver.com/telegram/webhook"
