@@ -26,9 +26,9 @@ public class MessageController {
 
         try {
             botService.execute(message);
-            return "Mesaj başarıyla gönderildi!";
+            return "Message succesfully sent!";
         } catch (TelegramApiException e) {
-            return "Hata oluştu: " + e.getMessage();
+            return "Oppss... " + e.getMessage();
         }
     }
 
@@ -46,7 +46,7 @@ public class MessageController {
 
         try {
             botService.execute(photo);
-            return "Fotoğraf başarıyla gönderildi!";
+            return "Picture succesfully sent!";
         } catch (TelegramApiException e) {
             return "Hata oluştu: " + e.getMessage();
         }
@@ -60,9 +60,9 @@ public class MessageController {
 
         try {
             botService.execute(document);
-            return "Belge başarıyla gönderildi!";
+            return "The document succesfully sent!";
         } catch (TelegramApiException e) {
-            return "Hata oluştu: " + e.getMessage();
+            return "Oppss... " + e.getMessage();
         }
     }
 
