@@ -80,9 +80,9 @@ public class MessageController {
 
         try {
             botService.execute(location);
-            return "Konum başarıyla gönderildi!";
+            return "Location sent succesfully";
         } catch (TelegramApiException e) {
-            return "Hata oluştu: " + e.getMessage();
+            return "Oppss... " + e.getMessage();
         }
     }
 }

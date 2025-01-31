@@ -71,7 +71,7 @@ public class TelegramBotService extends TelegramLongPollingBot {
             try {
                 execute(message);
             } catch (TelegramApiException e) {
-                log.error("Hata oluştu!", e);
+                log.error("Oppss...", e);
             }
         }
     }
