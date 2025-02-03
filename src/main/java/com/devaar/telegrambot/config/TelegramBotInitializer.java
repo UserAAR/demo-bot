@@ -10,10 +10,22 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 @Configuration
 public class TelegramBotInitializer {
 
+    private static boolean botRegistered = false;
+    private static TelegramBotsApi telegramBotsApi;
+
     @Bean
     public TelegramBotsApi telegramBotsApi(TelegramBotService bot) throws TelegramApiException {
-        TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
-        telegramBotsApi.registerBot(bot);
-        return telegramBotsApi;
+        synchronized (this) {
+            if (botRegistered) {
+                return telegramBotsApi;
+            }
+
+
+            telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
+            telegramBotsApi.registerBot(bot);
+            botRegistered = true;
+
+            return telegramBotsApi;
+        }
     }
 }
