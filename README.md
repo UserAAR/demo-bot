@@ -52,11 +52,11 @@ DevAAR is a multi-functional Telegram bot built with Java and Spring Boot. It is
 
 ## Technology Stack 💻
 
-- **Core Framework:** Java 17, Spring Boot 3.2
+- **Core Framework:** Java 21, Spring Boot 3.2
 - **Telegram API:** TelegramBots 6.9.7
 - **Data Parsing:** Jackson XML 2.15
 - **Logging:** SLF4J + Logback
-- **Build Tool:** Maven
+- **Build Tool:** Gradle
 
 ---
 
