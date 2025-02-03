@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.devaar.telegrambot.TelegramBotApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-03T03:34:30" hostname="user-aar-Aspire-A515-58P" time="0.469">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.devaar.telegrambot.TelegramBotApplicationTests" time="0.469"/>
+  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+07:34:28.532 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.devaar.telegrambot.TelegramBotApplicationTests]: TelegramBotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:34:28.585 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.devaar.telegrambot.TelegramBotApplication for test class com.devaar.telegrambot.TelegramBotApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-02-03T07:34:28.812+04:00  INFO 217742 --- [telegram-bot] [    Test worker] c.d.t.TelegramBotApplicationTests        : Starting TelegramBotApplicationTests using Java 21.0.5 with PID 217742 (started by aar in /home/aar/IdeaProjects/telegram-bot)
+2025-02-03T07:34:28.813+04:00  INFO 217742 --- [telegram-bot] [    Test worker] c.d.t.TelegramBotApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-02-03T07:34:29.413+04:00 ERROR 217742 --- [telegram-bot] [    Test worker] c.d.telegrambot.bot.TelegramBotService   : Error during the downloading CV: class path resource [resources/cv.pdf] cannot be resolved to URL because it does not exist
+2025-02-03T07:34:30.015+04:00  INFO 217742 --- [telegram-bot] [    Test worker] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-02-03T07:34:30.301+04:00  INFO 217742 --- [telegram-bot] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-02-03T07:34:30.346+04:00  INFO 217742 --- [telegram-bot] [    Test worker] c.d.t.TelegramBotApplicationTests        : Started TelegramBotApplicationTests in 1.692 seconds (process running for 2.37)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/aar/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.11/a38b16385e867f59a641330f0362ebe742788ed8/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
