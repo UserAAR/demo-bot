@@ -5,6 +5,6 @@ spring:
 telegram:
   bot:
     username: "LMSdemobot"
-    token: "7742609394:AAHYhwMbwgpfWqHRj-t719AjR9S_1DjmDek"
+    token: "take your own token from botfather"
 #  webhook:
 #    url: "https://myserver.com/telegram/webhook"
